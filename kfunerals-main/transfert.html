@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=css/style.css > 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>الزرقاء</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+       
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن؟</a></li>
+            <li><a href="services.html">الخدمات</a></li>
+            <li><a href="contact.html">التواصل والدعم </a></li>
+          </ul>
+        
+        </div>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1> نقل الجثث</h1>
+    </section>
+    <section class="services transfert">
+<div class="testbox">
+      <form action="/">
+        <div class="banner">
+          <h1>طلب نقل جثة </h1>
+        </div>
+        <p class="top-info">املئ الاستمار بعناية ودقة وتأكد من المعلومات المدرجة قبل الطلب</p>
+        <div class="item">
+          <p>الاسم<span class="required">*</span></p>
+          <div class="name-item">
+            <input type="text" name="name" placeholder="القب" required/>
+            <input type="text" name="name" placeholder="السم" required/>
+          </div>
+        </div>
+        <div class="question">
+          <p>الجنس<span class="required">*</span></p>
+          <div class="question-answer">
+            <label><input type="radio" value="none" name="gender" required/> <span>ذكر</span></label>
+            <label><input type="radio" value="none" name="gender" required/> <span>انثى</span></label>
+          </div>
+        </div>
+        <div class="item">
+          <p>لقب المتوفى<span class="required">*</span></p>
+          <input type="text" name="name"/>
+        </div>
+        <div class="item">
+          <p>اسم المتوفى <span class="required">*</span></p>
+          <input type="text" name="name" required/>
+        </div>
+        <div class="item">
+          <p>تاريخ ومكان ميلاد المتوفى  <span class="required">*</span></p>
+          <input type="text" name="name" required/>
+          <input type="date" name="name" required/>
+        </div>
+        
+        <div class="item">
+          <p>المدفن  الحالي الجثة<span class="required">*</span></p>
+          <input type="text" name="name" placeholder="عنوان" required/>
+          <div class="city-item">
+            <input type="text" name="name" placeholder="اسم المقبرة" required/>
+            <input type="text" name="name" placeholder="مدينة" required/>
+            <input type="text" name="name" placeholder="ولاية " required/>
+          
+            <select>
+              <option value="">بلاد</option>
+              <option value="1">روسيا</option>
+              <option value="2">ألمانيا</option>
+              <option value="3">فرنسا</option> 
+              <option value="4">كندا</option>
+              <option value="5">الجزائر</option>
+            </select>
+          </div>
+        </div>
+        <div class="item">
+          <p>مكان نقل الجثة<span class="required">*</span></p>
+          <input type="text" name="name" placeholder="عنوان" required/>
+          <div class="city-item">
+            <input type="text" name="name" placeholder="اسم المقبرة" required/>
+            <input type="text" name="name" placeholder="مدينة" required/>
+            <input type="text" name="name" placeholder="ولاية " required/>
+            
+            <select>
+              <option value="">البلاد</option>
+              <option value="1">روسيا</option>
+              <option value="2">ألمانيا</option>
+              <option value="3">فرنسا</option>
+              <option value="4">كندا</option>
+              <option value="5">الجزائر</option>
+            </select>
+          </div>
+        </div>
+        <div class="item">
+          <p>الايميل<span class="required">*</span></p>
+          <input type="text" name="name" required/>
+        </div>
+        <div class="item">
+          <p>رقم الهاتف</p>
+          <input type="text" name="name"/>
+        </div>
+       <!--  <div class="question">
+          <p>Do you require a personal trainer?<span class="required">*</span></p>
+          <div class="question-answer">
+            <label><input type="radio" value="none" name="personal-trainer" required/> <span>Yes</span></label>
+            <label><input type="radio" value="none" name="personal-trainer" required/> <span>No</span></label>
+          </div>
+        </div>
+       <div class="question">
+          <p>سؤال?<span class="required">*</span></p>
+          <div class="question-answer">
+            <label><input type="radio" value="none" name="gym-before" required/> <span>Yes</span></label>
+            <label><input type="radio" value="none" name="gym-before" required/> <span>No</span></label>
+          </div>
+        </div>
+        <div class="question">
+          <p>Membership Type<span class="required">*</span></p>
+          <div class="question-answer">
+            <label><input type="radio" value="none" name="membership" required/> <span>Regular</span></label>
+            <label><input type="radio" value="none" name="membership" required/> <span>Pro</span></label>
+            <label><input type="radio" value="none" name="membership" required/> <span>VIP</span></label>
+          </div>
+        </div>
+      -->
+        <div class="btn-block">
+          <button type="submit" href="/">طلب</button>
+        </div>
+      </form>
+    </div>
+    </section>
+     <!-- Footer -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
+        repellendus suscipit enim quos consequatur commodi tempora autem,<br />
+        distinctio vero recusandae, praesentium aut dolores, quibusdam
+        doloremque quam debitis sunt deserunt vitae!
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+     
+    </section>
+
+    <!-- Javascript for toggle menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    </body>
+</html>

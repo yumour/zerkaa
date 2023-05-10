@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=css/style.css /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"   />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>الزرقاء</title>
+  </head>
+  <body>
+    <section class="sub-header">
+        <nav>
+            
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="index.html#about-us">من نحن؟</a></li>
+                <li><a href="index.html#services">الخدمات</a></li>
+                <li><a href="contact.html">التواصل والدعم </a></li>
+              </ul>
+            </div>
+            <a href="index.html"><img src="images/logo.png" /></a>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+          </nav>
+      <h1> المتجر </h1>
+    </section >
+    <section class="services transfert">
+    <div class="testbox">
+        <form action="/">
+          <div class="banner">
+            <h1>طلب </h1>
+          </div>
+          <p class="top-info">
+                      <div class="item">
+            <p>الاسم<span class="required">*</span></p>
+            <div class="name-item">
+              <input type="text" name="name" placeholder="اللقب" required/>
+              <input type="text" name="name" placeholder="السم" required/>
+            </div>
+          </div>
+          <div class="question">
+            <p>الجنس<span class="required">*</span></p>
+            <div class="question-answer">
+              <label><input type="radio" value="none" name="gender" required/> <span>ذكر</span></label>
+              <label><input type="radio" value="none" name="gender" required/> <span>انثى</span></label>
+            </div>
+          </div>
+          <div class="item">
+            <p> عدد<span class="required">*</span></p>
+            <input type="number" name="name"/>
+          </div>
+          <div class="item">
+            <p> عدد الساعات<span class="required">*</span></p>
+            <input type="number" name="name"/>
+          </div>
+          
+          <div class="item">
+            <p>العنوان<span class="required">*</span></p>
+            <input type="text" name="name" placeholder="عنوان" required/>
+            <div class="city-item">
+              <input type="text" name="name" placeholder="مدينة" required/>
+              <input type="text" name="name" placeholder="ولاية " required/>            
+              <select>
+                <option value="">البلاد</option>
+                <option value="1">روسيا</option>
+                <option value="2">ألمانيا</option>
+                <option value="3">فرنسا</option>
+                <option value="4">كندا</option>
+                <option value="5">الجزائر</option>
+              </select>
+            </div>
+          </div>
+          <div class="item">
+            <p>الايميل<span class="required">*</span></p>
+            <input type="text" name="name" required/>
+          </div>
+          <div class="item">
+            <p>رقم الهاتف</p>
+            <input type="text" name="name"/>
+          </div>
+       
+          <div class="btn-block">
+            <button type="submit" href="/">طلب</button>
+          </div>
+        </form>
+      </div>
+    </section>
+     <!-- Footer -->
+     <section class="footer">
+      <h4>عنا</h4>
+      <p>
+        شركة الزرقاء للجناىز ونقل الجثث والدفن
+
+      </p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+
+      </section>
+  
+      <!-- Javascript for toggle menu-->
+      <script>
+        var navLinks = document.getElementById("navLinks");
+  
+        function showMenu() {
+          navLinks.style.right = "0";
+        }
+        function hideMenu() {
+          navLinks.style.right = "-200px";
+        }
+      </script>
+    </body>
+  </html>

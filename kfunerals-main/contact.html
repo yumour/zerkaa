@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=css/style.css /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"   />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>الزرقاء</title>
+  </head>
+  <body>
+    <section class="sub-header">
+        <nav>
+            
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="index.html#about-us">من نحن؟</a></li>
+                <li><a href="index.html#services">الخدمات</a></li>
+                <li><a href="contact.html">التواصل والدعم </a></li>
+              </ul>
+            </div>
+            <a href="index.html"><img src="images/logo.png" /></a>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+          </nav>
+      <h1>Contact Us</h1>
+    </section>
+    <!-- Contact US-->
+    <section class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2524.4748850280375!2d-0.6329456233019659!3d35.21648100131738!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7effd659528f99%3A0x7e7144111a1d4e67!2sFaculty%20of%20Law%20and%20Political%20Science!5e0!3m2!1sen!2sdz!4v1683590785698!5m2!1sen!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+             <i class="fa fa-home"></i>
+             <span>
+               <h5>Sidi bel Abbes</h5>
+               <p>10, city A , Route B</p>
+             </span>
+          </div>
+   
+        <div>
+          <i class="fa fa-phone"></i>
+             <span>
+               <h5>0xxxxxxxxx</h5>
+               <p>  على مدار الاسبوع  <i> 24h/24h </i>  </p>
+             </span>
+        </div>
+        <div>
+          <i class="fa fa-fax"></i>
+             <span>
+               <h5>048xxxxxxx</h5>
+              
+             </span>
+        </div>
+          <div>
+          <i class="fa fa-envelope-o"></i>
+             <span>
+               <h5>us@email.com</h5>
+               <p>راسلنا انشغالك </p>
+             </span>
+        </div>
+      </div>
+      <div class="contact-col" method="post">
+        <form action="form-handler.php">
+          <input type="text" name="name" placeholder="الاسم" required>
+          <input type="email" name="email" placeholder="البريد الالكتروني" required>
+          <select name="الولاية" id="state">
+        <option selected disabled>اختر ولاياتك</option>
+        <option value="16">الجزائر</option>
+        <option value="31">وهران</option>
+        <option value="21">عنابة</option>
+        <option value= "22">سيدي بلعباس</option>
+      </select>          
+          <textarea rows="8" name="message" placeholder="رسالة" required></textarea>
+          <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+    </section>
+  
+    <!-- Footer -->
+    <section class="footer">
+      <h4>عنا</h4>
+      <p>
+          شركة الزرقاء للجناىز ونقل الجثث والدفن
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      
+    </section>
+
+    <!-- Javascript for toggle menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
